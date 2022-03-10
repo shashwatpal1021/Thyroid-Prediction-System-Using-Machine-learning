@@ -1,4 +1,4 @@
-# Thyroid-Prediction
+# Thyroid-Prediction-By-Shashwat-Pal
 
 ## Table of Content
   * [Link](#link)
@@ -51,3 +51,6 @@ Our next step would be to follow the instruction given on [Heroku Documentation]
 * Use multiple Algorithms
 * Optimize Flask app.py
 * Front-End 
+
+
+## ThankS 
