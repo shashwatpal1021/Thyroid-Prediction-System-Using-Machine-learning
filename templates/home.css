@@ -1,6 +1,6 @@
 body {
     background: rgb(247, 247, 250);
-    background: linear-gradient(90deg, rgb(242, 219, 250) 0%, rgb(244, 117, 191) 35%, rgb(237, 186, 241) 100%);
+    background: linear-gradient(90deg, rgb(237, 186, 241) 0%, rgb(244, 117, 191) 50%, rgb(237, 186, 241) 100%);
     text-align: center;
     padding: 0px;
 }
