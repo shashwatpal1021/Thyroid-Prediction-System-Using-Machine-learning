@@ -64,7 +64,6 @@ def predict():
                                      TT4,
                                      T3,
                                      T4U,
-                                     
                                      sex_M,
                                      sick_t,
                                      pregnant_t,
