@@ -1,0 +1,40 @@
+body {
+    background: rgb(247, 247, 250);
+    background: linear-gradient(90deg, rgb(242, 219, 250) 0%, rgb(244, 117, 191) 35%, rgb(237, 186, 241) 100%);
+    text-align: center;
+    padding: 0px;
+}
+
+.one {
+    border-radius: 14px;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.six {
+    width: 280px;
+    height: 28px;
+    text-align: center;
+    border-radius: 18px;
+    font-size: 18px;
+}
+
+.six:hover {
+    background-color: rgb(186, 225, 78);
+}
+
+
+#sub {
+    width: 180px;
+    height: 28px;
+    text-align: center;
+    border-radius: 18px;
+    font-size: 18px;
+}
+
+#sub:hover {
+    background-color: rgb(58, 232, 232);
+
+}
+

@@ -6,46 +6,47 @@
         <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="./home.css">
 </head>
 
 <body>
 
     <div style="color:black">
          <form action="{{ url_for('predict')}}" method="post">
-			<h1 style="font=Algerian;">RAJKIYA ENGINEERING COLLEGE, AZAMGARH</h1>
+			<h1 style="font-style=Algerian;">RAJKIYA ENGINEERING COLLEGE, AZAMGARH</h1>
 			
             <h2>THYROID PREDICTION SYSTEM</h2>
-            <h3>Age</h3><input id="one" name="age" required="required">
-            <h3>Value of TSH (Range:3–14.00 μg/dL)</h3><input id="five" name="TSH" required="required">
-            <h3>Value of TT4 (Range:0-15mcg/dL)</h3><input id="three" name="TT4" required="required">
-            <h3>Value of T3 (Range:50-250 ng/dL)</h3><input id="two" name="T3" required="required">
+            <h3>Age</h3><input class="one" name="age" required="required">
+            <h3>Value of TSH (Range:3–14.00 μg/dL)</h3><input class="one" name="TSH" required="required">
+            <h3>Value of TT4 (Range:0-15mcg/dL)</h3><input class="one" name="TT4" required="required">
+            <h3>Value of T3 (Range:50-250 ng/dL)</h3><input class="one" name="T3" required="required">
             
-            <h3>Value of T4U (Range:0.5-2.5ng/dL)</h3><input id="four" name="T4U" required="required">
+            <h3>Value of T4U (Range:0.5-2.5ng/dL)</h3><input class="one" name="T4U" required="required">
             
-            <h3>What Is your gender?</h3><br><select name="sex" id="six" required="required">
+            <h3>What Is your gender?</h3><select name="sex" class="six" required="required">
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
         
          </select>
-            <h3>Is the Person Sick?</h3><br><select name="sick" id="ten" required="required">
+            <h3>Is the Person Sick?</h3><select name="sick" class="six" required="required">
                 <option value="True">True</option>
                 <option value="False">False</option>
           </select>
-            <h3>Is the Person Pregnant?</h3><br><select name="pregnant" id="eleven" required="required">
+            <h3>Is the Person Pregnant?</h3><select name="pregnant" class="six" required="required">
                 <option value="True">True</option>
                 <option value="False">False</option>
 
           </select>
-            <h3>Is The Person Get Thyroid Surgery?</h3><br><select name="thyroid_surgery" id="twelve" required="required">
+            <h3>Is The Person Get Thyroid Surgery?</h3><select name="thyroid_surgery" class="six" required="required">
                 <option value="True">True</option>
                 <option value="False">False</option>
          
           </select>
-            <h3>Is the Person Have Goitre?</h3><br><select name="goitre" id="seventeen" required="required">
+            <h3>Is the Person Have Goitre?</h3><select name="goitre" class="six" required="required">
                 <option value="True">True</option>
                 <option value="False">False</option>
           </select>
-            <h3>Is the Person Have Tumor?</h3><br><select name="tumor" id="eighteen" required="required">
+            <h3>Is the Person Have Tumor?</h3><select name="tumor" class="six" required="required">
                 <option value="True">True</option>
                 <option value="False">False</option>
           
@@ -57,7 +58,7 @@
 
 
 
-        <br><br><h3>{{ prediction_text }}<h3>
+        <br><h3>{{ prediction_text }}<h3>
              <p>THYROID PREDICTION SYSTEM<br>
 <br>
 <h1>  Shashwat Pal <br> Rudra Pratap Singh </h2></p>
@@ -68,276 +69,6 @@
 
 
 
-    <style>
-        body {
-            background-color: #AFF0E7;
-            text-align: center;
-            padding: 0px;
-        }
-
-        #six {
-            width: 280px;
-            height: 28px;
-            text-align: center;
-            border-radius: 18px;
-            font-size: 18px;
-        }
-
-        #six:hover {
-            background-color: coral;
-        }
-
-
-
-        #box {
-            border-radius: 120px;
-            border-color: 45px;
-            border-style: solid;
-            font-family: cursive;
-            text-align: center;
-            background-color: rgb(168, 131, 61);
-            font-size: medium;
-            position: absolute;
-            width: 700px;
-            bottom: 9%;
-            height: 850px;
-            right: 30%;
-            padding: 0px;
-            margin: 0px;
-            font-size: 14px;
-        }
-
-        #seven {
-            width: 280px;
-            height: 28px;
-            text-align: center;
-            border-radius: 18px;
-            font-size: 18px;
-        }
-
-        #seven:hover {
-            background-color: coral;
-        }
-
-        #eight {
-            width: 280px;
-            height: 28px;
-            text-align: center;
-            border-radius: 18px;
-            font-size: 20px;
-        }
-
-        #eight:hover {
-            background-color: coral;
-        }
-
-        #nine {
-            width: 280px;
-            height: 28px;
-            text-align: center;
-            border-radius: 18px;
-            font-size: 20px;
-        }
-
-        #nine:hover {
-            background-color: coral;
-        }
-
-        #ten {
-            width: 280px;
-            height: 28px;
-            text-align: center;
-            border-radius: 18px;
-            font-size: 20px;
-        }
-
-        #ten:hover {
-            background-color: coral;
-        }
-
-        #eleven {
-            width: 280px;
-            height: 28px;
-            text-align: center;
-            border-radius: 18px;
-            font-size: 20px;
-        }
-
-        #eleven:hover {
-            background-color: coral;
-        }
-
-        #twelve {
-            width: 280px;
-            height: 28px;
-            text-align: center;
-            border-radius: 18px;
-            font-size: 20px;
-        }
-
-        #twelve:hover {
-            background-color: coral;
-        }
-
-        #thirteen {
-            width: 280px;
-            height: 28px;
-            text-align: center;
-            border-radius: 18px;
-            font-size: 20px;
-        }
-
-        #thirteen:hover {
-            background-color: coral;
-        }
-
-
-
-        #fourteen {
-            width: 280px;
-            height: 28px;
-            text-align: center;
-            border-radius: 18px;
-            font-size: 20px;
-        }
-
-        #fourteen:hover {
-            background-color: coral;
-        }
-
-        #fifteen {
-            width: 280px;
-            height: 28px;
-            text-align: center;
-            border-radius: 18px;
-            font-size: 18px;
-        }
-
-        #fifteen:hover {
-            background-color: coral;
-        }
-
-        #sixteen {
-            width: 280px;
-            height: 28px;
-            text-align: center;
-            border-radius: 18px;
-            font-size: 18px;
-        }
-
-        #sixteen:hover {
-            background-color: coral;
-        }
-
-        #seventeen {
-            width: 280px;
-            height: 28px;
-            text-align: center;
-            border-radius: 18px;
-            font-size: 18px;
-        }
-
-        #seventeen:hover {
-            background-color: coral;
-        }
-
-        #eighteen {
-            width: 280px;
-            height: 28px;
-            text-align: center;
-            border-radius: 18px;
-            font-size: 18px;
-        }
-
-        #eighteen:hover {
-            background-color: coral;
-        }
-
-        #nineteen {
-            width: 280px;
-            height: 28px;
-            text-align: center;
-            border-radius: 18px;
-            font-size: 18px;
-        }
-
-        #nineteen:hover {
-            background-color: coral;
-        }
-
-        #twenty {
-            width: 280px;
-            height: 28px;
-            text-align: center;
-            border-radius: 18px;
-            font-size: 18px;
-        }
-
-        #twenty:hover {
-            background-color: coral;
-        }
-
-        #twentyone {
-            width: 280px;
-            height: 28px;
-            text-align: center;
-            border-radius: 18px;
-            font-size: 18px;
-        }
-
-        #twentyone:hover {
-            background-color: coral;
-        }
-
-        #sub {
-            width: 180px;
-            height: 28px;
-            text-align: center;
-            border-radius: 18px;
-            font-size: 18px;
-        }
-
-        #sub:hover {
-            background-color: darkcyan;
-        }
-
-        #one {
-            border-radius: 14px;
-            height: 25px;
-            font-size: 20px;
-            text-align: center;
-        }
-
-        #two {
-            border-radius: 14px;
-            height: 25px;
-            font-size: 20px;
-            text-align: center;
-        }
-
-        #three {
-            border-radius: 14px;
-            height: 25px;
-            font-size: 20px;
-            text-align: center;
-        }
-
-        #four {
-            border-radius: 14px;
-            height: 25px;
-            font-size: 20px;
-            text-align: center;
-        }
-
-        #five {
-            border-radius: 14px;
-            height: 25px;
-            font-size: 20px;
-            text-align: center;
-        }
-
-
-    </style>
 </body>
 
 </html>
